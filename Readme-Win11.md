@@ -36,6 +36,9 @@ snip
 ShellPage.xaml.cs contains SCS invocation, but indeed that has blank definition on original source.
 So I copy paloaltotinybasic invocation code from bellow of SCS, and path changed to scs.bin.
 That changes are reflected to ShellPage.xaml.cs 2025/11/29 21:00 arround.
+Change is mainly like this:
+        var memory = File.ReadAllBytes("C:\\Users\\user\\Downloads\\HBD8080A-master\\HBD8080A-master\\HBD8080A\\Resources\\scs.bin");
+You should change path of scs.bin.
 First you should do to see SCS working, Power on then RUN then type something and ctrl-x.
 If scs worked, you would see WHAT on screen.
 Then test this.
