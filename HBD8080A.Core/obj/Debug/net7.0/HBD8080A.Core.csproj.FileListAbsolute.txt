@@ -1,0 +1,12 @@
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\bin\Debug\net7.0\HBD8080A.Core.deps.json
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\bin\Debug\net7.0\HBD8080A.Core.dll
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\bin\Debug\net7.0\HBD8080A.Core.pdb
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\HBD8080A.Core.csproj.AssemblyReference.cache
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\HBD8080A.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\HBD8080A.Core.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\HBD8080A.Core.AssemblyInfo.cs
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\HBD8080A.Core.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\HBD8080A.Core.dll
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\refint\HBD8080A.Core.dll
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\HBD8080A.Core.pdb
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\HBD8080A.Core\obj\Debug\net7.0\ref\HBD8080A.Core.dll
