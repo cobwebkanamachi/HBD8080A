@@ -50,11 +50,9 @@ DUMP 501
 DUMP 505
 ```
 <BR><IMG SRC="https://github.com/cobwebkanamachi/HBD8080A/blob/win11/scsworked.jpg">SCS working</IMG><BR>
-```
 If same as you input displayed, you win!
 :-) Greatly assisted bellow.
 https://deramp.com/downloads/mfe_archive/010-S100%20Computers%20and%20Boards/00-Imsai/40-Imsai%20Software/1976%20Self%20Contained%20System/
 and manual of SCS bellow.
 https://deramp.com/downloads/mfe_archive/010-S100%20Computers%20and%20Boards/00-Imsai/40-Imsai%20Software/1976%20Self%20Contained%20System/12-Imsai%20SCS%20Manual%202002.pdf
-```
 Enjoy!
