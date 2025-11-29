@@ -103,7 +103,23 @@ public sealed partial class ShellPage : Page {
     }
 
     private void SCS_Click(object sender, RoutedEventArgs e) {
-
+        //load file from static location
+        var memory = File.ReadAllBytes("C:\\Users\\user\\Downloads\\HBD8080A-master\\HBD8080A-master\\HBD8080A\\Resources\\scs.bin");
+        //        var memory = HBD8080A.Resources.i8080Programs.scs;
+        //var memory = HBD8080A.Resources.i8080Programs.paloaltotinybasic;
+        if (memory != null) {
+            var Computer = App.GetService<ComputerSystemService>();
+            var Cpu = Computer.Cpu;
+            //stop cpu
+            PrepareToLoad(Cpu);
+            //reset
+            //load memory
+            for (var i = 0; i < memory.Count(); i++) {
+                Cpu.Memory[i] = memory[i];
+            }
+            //start cpu
+            CpuState(Cpu, Cpu8080A.CpuState.Running);
+        }
     }
 
     private void PATB_Click(object sender, RoutedEventArgs e) {
