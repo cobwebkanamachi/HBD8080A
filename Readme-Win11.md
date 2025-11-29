@@ -3,7 +3,7 @@ How to mitigate to Windows11 24H2 after
 [Watch Demo Video](https://github.com/cobwebkanamachi/HBD8080A/blob/win11/HBD8080AWORKING.mp4)
 I tried build this repo(original) on Visual Studio 2022 & win11 24h2.
 So I met mainly two problems.
-<PRE>
+```
 1) terminal invocation failed
 fix path on Services\DumbTerminalService.cs:(bellow)
     private void TerminalTask() {
@@ -17,7 +17,6 @@ fix path on Services\DumbTerminalService.cs:(bellow)
 2) .net version, windows version changed
 win11-x64 -> win-x64
 TargetFramework -> net9.0-windows10.0.26100
-```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -30,6 +29,4 @@ TargetFramework -> net9.0-windows10.0.26100
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
 ```
 snip
-</Pre>
 Enjoy!
-        
