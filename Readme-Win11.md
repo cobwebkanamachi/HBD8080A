@@ -1,6 +1,6 @@
 How to mitigate to Windows11 24H2 after
 
-[Watch Demo Video](https://github.com/cobwebkanamachi/HBD8080A/blob/win11/HBD8080AWORKING.mp4)
+[![Demo Video Thumbnail](thumbnail.png)](https://github.com/cobwebkanamachi/HBD8080A/blob/win11/HBD8080AWORKING.mp4)
 I tried build this repo(original) on Visual Studio 2022 & win11 24h2.
 So I met mainly two problems.
 <PRE>
