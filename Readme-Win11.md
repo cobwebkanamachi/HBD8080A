@@ -17,6 +17,7 @@ fix path on Services\DumbTerminalService.cs:(bellow)
 2) .net version, windows version changed
 win11-x64 -> win-x64
 TargetFramework -> net9.0-windows10.0.26100
+```xml
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
@@ -27,6 +28,7 @@ TargetFramework -> net9.0-windows10.0.26100
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <Platforms>x86;x64;arm64</Platforms>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+```
 snip
 </Pre>
 Enjoy!
