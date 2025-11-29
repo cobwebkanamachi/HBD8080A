@@ -1,0 +1,14 @@
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\bin\Release\net9.0\DumbTerminal.exe
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\bin\Release\net9.0\DumbTerminal.deps.json
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\bin\Release\net9.0\DumbTerminal.runtimeconfig.json
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\bin\Release\net9.0\DumbTerminal.dll
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\bin\Release\net9.0\DumbTerminal.pdb
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\DumbTerminal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\DumbTerminal.AssemblyInfoInputs.cache
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\DumbTerminal.AssemblyInfo.cs
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\DumbTerminal.csproj.CoreCompileInputs.cache
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\DumbTerminal.dll
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\refint\DumbTerminal.dll
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\DumbTerminal.pdb
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\DumbTerminal.genruntimeconfig.cache
+C:\Users\user\Downloads\HBD8080A-master\HBD8080A-master\DumbTerminal\obj\Release\net9.0\ref\DumbTerminal.dll
