@@ -27,6 +27,6 @@ TargetFramework -> net9.0-windows10.0.26100
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <Platforms>x86;x64;arm64</Platforms>
     <RuntimeIdentifier>win-x64</RuntimeIdentifier>
-```
 snip
+```
 Enjoy!
