@@ -1,0 +1,138 @@
+﻿<Page
+    x:Class="HBD8080A.Views.ShellPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:animatedvisuals="using:Microsoft.UI.Xaml.Controls.AnimatedVisuals"
+    Loaded="OnLoaded"
+    Unloaded="OnUnloaded"
+    mc:Ignorable="d"
+    Width="1790"
+    Height="960"
+    MinWidth="1790"
+    MinHeight="960" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32" />
+            <RowDefinition Height="44" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" x:Name="AppTitleBar">
+            <Image Source="/Assets/WindowIcon.ico" HorizontalAlignment="Left" Width="16" Height="16" Margin="8,0"/>
+            <TextBlock x:Name="AppTitleBarText" VerticalAlignment="Center" TextWrapping="NoWrap" Style="{StaticResource CaptionTextBlockStyle}" Margin="32, 0, 0, 0"/>
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+            </Grid.ColumnDefinitions>
+            <MenuBar Grid.Column="0">
+                <!--
+                TODO: Update item titles by updating <x:Uid>.Text entries in Strings/en-us/Resources.resw.
+                https://docs.microsoft.com/windows/uwp/app-resources/localize-strings-ui-manifest#refer-to-a-string-resource-identifier-from-xaml
+                -->
+                <MenuBarItem x:Uid="ShellMenuBarItem_File">
+                    <MenuFlyoutItem x:Uid="ShellMenuItem_File_Exit" Command="{x:Bind ViewModel.MenuFileExitCommand}" />
+                </MenuBarItem>
+                <MenuBarItem x:Uid="ShellMenuBarItem_Views">
+                    <MenuBarItem.Items>
+                        <MenuFlyoutItem x:Uid="ShellMenuItem_Views_Main" Command="{x:Bind ViewModel.MenuViewsMainCommand}" />
+                        <MenuFlyoutItem x:Uid="ShellMenuItem_Views_Status" IsEnabled="False" Command="{x:Bind ViewModel.MenuViewsStatusCommand}" />
+                        <MenuFlyoutItem x:Uid="ShellMenuItem_Views_Memory" Command="{x:Bind ViewModel.MenuViewsMemoryCommand}" />
+                        <MenuFlyoutItem x:Uid="ShellMenuItem_Views_DisplayAdapter" Command="{x:Bind ViewModel.MenuViewsDisplayAdapterCommand}" />
+                        <MenuFlyoutItem x:Uid="ShellMenuItem_Views_Registers" IsEnabled="False" Command="{x:Bind ViewModel.MenuViewsRegistersCommand}" />
+                        <MenuFlyoutItem x:Uid="ShellMenuItem_Views_DisAsm" IsEnabled="False" Command="{x:Bind ViewModel.MenuViewsDisAsmCommand}" />
+                        <!--<MenuFlyoutItem x:Uid="ShellMenuItem_Views_Testbed" Command="{x:Bind ViewModel.MenuViewsTestbedCommand}" />-->
+                        <!--<MenuFlyoutItem x:Uid="ShellMenuItem_Views_FrontPanel" Command="{x:Bind ViewModel.MenuViewsFrontPanelCommand}" />-->
+                    </MenuBarItem.Items>
+                </MenuBarItem>
+            </MenuBar>
+            <CommandBar Grid.Column="1" 
+                    Height="44" 
+                    Loaded="CommandBar_Loaded"
+                    DefaultLabelPosition="Right" OverflowButtonVisibility="Collapsed">
+            
+            <!--<AppBarButton x:Name="BtnMonitor"
+                          Label="Run Monitor" 
+                          Click="Monitor_Click"/>-->
+            <!--Icon="Directions"-->
+
+                <AppBarToggleButton
+                          x:Name="BtnTTY"
+                          Label="Text Terminal" 
+                          IsChecked="False"
+                          Click="TTY_Click" />
+                <AppBarToggleButton 
+                          x:Name="BtnGraphicsTerm"
+                          Label="Graphics Terminal" 
+                          IsChecked="False"
+                          Click="GraphicsTerm_Click" />
+                <AppBarButton
+                          x:Name="BtnPeripherals"
+                          LabelPosition="Default"
+                          Label="Peripherals &amp; Accessories">
+                    <AppBarButton.Flyout>
+                        <MenuFlyout>
+                            <ToggleMenuFlyoutItem Text="Line Printer" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="Graphics Printer" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="RealTime Clock" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="HostDatabase" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="HostNetwork" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="HostFileArea" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="Log Viewer" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="Memory View" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="Disassembly View" IsChecked="False"/>
+                            <ToggleMenuFlyoutItem Text="Debugger" IsChecked="False"/>
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Clear All"/>
+                        </MenuFlyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
+                <AppBarSeparator />
+                <AppBarButton 
+                          x:Name="BtnSCS"
+                          Label="SCS" 
+                          Click="SCS_Click"/>
+                <AppBarButton 
+                          x:Name="BtnPATB"
+                          Label="Palo Alto Tiny Basic" 
+                          Click="PATB_Click"/>
+                <AppBarButton 
+                          x:Name="BtnPrograms"
+                          LabelPosition="Default"
+                          Label="Programs">
+                    <AppBarButton.Flyout>
+                        <MenuFlyout>
+                            <MenuFlyoutItem Text="Monitor" />
+                            <MenuFlyoutItem Text="4K Basic" />
+                            <MenuFlyoutItem Text="8K Basic" />
+                            <MenuFlyoutItem Text="Monitor" />
+                            <MenuFlyoutSeparator/>
+                            <MenuFlyoutItem Text="Select file..."/>
+                        </MenuFlyout>
+                    </AppBarButton.Flyout>
+                </AppBarButton>
+                <AppBarSeparator />
+                <AppBarButton x:Name="ShellMenuBarSettingsButton" x:Uid="ShellMenuBarSettingsButton"
+                          AnimatedIcon.State="Normal"
+                          PointerEntered="ShellMenuBarSettingsButton_PointerEntered"
+                          PointerExited="ShellMenuBarSettingsButton_PointerExited"
+                          Command="{x:Bind ViewModel.MenuSettingsCommand}">
+                    <AnimatedIcon x:Name="ShellMenuBarSettingsButtonIcon">
+                        <AnimatedIcon.Source>
+                            <animatedvisuals:AnimatedSettingsVisualSource/>
+                        </AnimatedIcon.Source>
+                        <AnimatedIcon.FallbackIconSource>
+                            <FontIconSource FontFamily="{StaticResource SymbolThemeFontFamily}" Glyph="&#xE713;"/>
+                        </AnimatedIcon.FallbackIconSource>
+                    </AnimatedIcon>
+                </AppBarButton>
+            </CommandBar>
+        </Grid>
+        <Grid Grid.Row="2" >
+            <Frame x:Name="NavigationFrame" />
+        </Grid>
+        <!--Margin="{StaticResource MenuBarContentMargin}"-->
+    </Grid>
+</Page>

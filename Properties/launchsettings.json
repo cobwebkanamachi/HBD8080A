@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "WSL": {
+      "commandName": "WSL2",
+      "distributionName": ""
+    },
+    "HBD8080A (Package)": {
+      "commandName": "MsixPackage",
+      "nativeDebugging": true
+    },
+    "HBD8080A (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
