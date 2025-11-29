@@ -3,7 +3,7 @@ How to mitigate to Windows11 24H2 after
 [Watch Demo Video](https://github.com/cobwebkanamachi/HBD8080A/blob/win11/HBD8080AWORKING.mp4)
 <BR>
 Now only patb and dumbterminal only tested.<BR>
-<IMG SRC="https://github.com/cobwebkanamachi/HBD8080A/blob/win11/image1.jpeg">TINY BASIC WORKED</IMG><BR>
+<IMG SRC="https://github.com/cobwebkanamachi/HBD8080A/blob/win11/image1.jpeg"><BR>TINY BASIC WORKED</IMG><BR>
 
 I tried build this repo(original) on Visual Studio 2022 & win11 24h2.<BR>
 So I met mainly two problems.
