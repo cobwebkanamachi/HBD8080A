@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "KJquMoh3ZRI=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Downloads\\HBD8080A-master\\HBD8080A-master\\GraphicsAdapter\\GraphicsAdapter.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\kgysoft.corelibraries\\8.0.0\\kgysoft.corelibraries.8.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\kgysoft.drawing\\8.0.0\\kgysoft.drawing.8.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\kgysoft.drawing.core\\8.0.0\\kgysoft.drawing.core.8.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\user\\.nuget\\packages\\system.drawing.common\\8.0.0\\system.drawing.common.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
